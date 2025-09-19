@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar.astro"
 import Hero from "../components/Hero.astro"
 import Services from "../components/Services.astro"
+import Footer from "../components/Footer.astro"
+
 ---
 
 	<html lang+="en">
@@ -16,6 +18,7 @@ import Services from "../components/Services.astro"
 			<Navbar />
 			<Hero />
 			<Services />
+            <Footer />
 		</body>
 	
 	</html>
@@ -24,13 +27,15 @@ import Services from "../components/Services.astro"
 	<style>
 		:root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
+    --primary: #2087fc;
+    --primaryLight: #00e498;
+    --secondary: #7543ff;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #ffffff;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.21'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
